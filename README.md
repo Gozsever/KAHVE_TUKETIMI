@@ -191,5 +191,68 @@ g2 <- ggplot(data, aes(x = as.factor(Quality.of.Sleep), y = Age, fill = as.facto
               g2)
 
 ```
+![Yaşa Göre Stres Ve Uyku](https://github.com/Gozsever/Uyku_Yasam_Tarz-/blob/main/G%C3%B6rseller/Ya%C5%9Fa%20G%C3%B6re%20Stres%20ve%20Uyku.png)
+
+YORUM
+
+## Grafik-4 Uyku Bozukluklarının Uyku Kalitesine, Uyku Süresine, Stres Düzeyine Ve Fiziksel Aktiviteye Etkisi
+
+```
+ # Uykusuzluk ve Uyku Apnesi olan verileri filtrele
+ filtered_data <- data %>% filter(Sleep.Disorder %in% c("Insomnia", "Sleep Apnea"))
+ 
+ g3 <- ggplot(filtered_data, aes(x = Quality.of.Sleep, fill = Sleep.Disorder )) +
+   geom_density(alpha = 0.5) +
+   labs(x = "Uyku Kalitesi ",
+        y = "Yoğunluk",
+        title = "Uyku Bozukluklarının Uyku Kalitesine Etkisi",
+        subtitle = "Kernel Yoğunluk Tahmini",
+        fill= "Uyku Bozukluğu")+
+   scale_fill_manual(values= met.brewer("Hokusai3",2),
+                     labels = c("Uykusuzluk", "Uyku Apnesi")) +
+   
+   theme_bw() 
+ 
+ 
+  g4 <-  ggplot(filtered_data, aes(x = Sleep.Duration, fill = Sleep.Disorder )) +
+   geom_density(alpha = 0.5) +
+   labs(x = "Uyku Süresi ",
+        y = "Yoğunluk",
+        title = "Uyku Bozukluklarının Uyku Süresine Etkisi",
+        subtitle = "Kernel Yoğunluk Tahmini",
+        fill= "Uyku Bozukluğu")+
+   scale_fill_manual(values= met.brewer("Hokusai3",2),
+                     labels = c("Uykusuzluk", "Uyku Apnesi")) +
+   
+   theme_bw() 
+   
+ g5 <-  ggplot(filtered_data, aes(x = Stress.Level, fill = Sleep.Disorder )) +
+     geom_density(alpha = 0.5) +
+     labs(x = "Stres Düzeyi ",
+          y = "Yoğunluk",
+          title = "Uyku Bozukluklarının Stres Düzeyine Etkisi",
+          subtitle = "Kernel Yoğunluk Tahmini",
+          fill= "Uyku Bozukluğu")+
+     scale_fill_manual(values= met.brewer("Hokusai3",2),
+                       labels = c("Uykusuzluk", "Uyku Apnesi")) +
+     
+     theme_bw() 
+   
+g6 <-   ggplot(filtered_data, aes(x = Physical.Activity.Level, fill = Sleep.Disorder )) +
+     geom_density(alpha = 0.5) +
+     labs(x = "Fiziksel Aktivite Düzeyi ",
+          y = "Yoğunluk",
+          title = "Uyku Bozukluklarının Fiziksel Aktiviteye Etkisi",
+          subtitle = "Kernel Yoğunluk Tahmini",
+          fill= "Uyku Bozukluğu")+
+     scale_fill_manual(values= met.brewer("Hokusai3",2),
+                       labels = c("Uykusuzluk", "Uyku Apnesi")) +
+     
+     theme_bw() 
+   
+grid.arrange(g3, g4, g5, g6)
+
+```
+  
 
 
