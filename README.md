@@ -1,30 +1,24 @@
-# Veri Seti
-Veri seti, uyku düzenleri, fiziksel aktivite, stres düzeyi ve genel sağlık durumları arasındaki ilişkileri incelemek amacıyla çevrimiçi olarak paylaşılan bir çalışmanın sonuçlarını içermektedir. Araştırmacılar ve sağlık profesyonelleri, bu verileri kullanarak farklı demografik faktörlerin ve yaşam tarzı seçimlerinin sağlık üzerindeki etkilerini analiz edebilirler. Kısaca özetleyecek olursak;
+#Uyku Bozuklukları ve Yaşam Tarzı
+Uyku bozuklukları ve yaşam tarzı arasındaki ilişki, günümüzde giderek artan bir ilgi konusu haline gelmiştir. Özellikle modern yaşamın getirdiği stres, düzensiz çalışma saatleri, teknoloji kullanımı ve hareketsiz yaşam tarzı gibi faktörler, uyku düzeni üzerinde önemli etkilere sahip olabilir. Örneğin, yetersiz fiziksel aktivite ve düzensiz uyku alışkanlıkları, uyku kalitesini olumsuz yönde etkileyebilir ve uyku bozukluklarının ortaya çıkmasına zemin hazırlayabilir.
 
-Zaman Aralığı:
-Aralık 2020 - Haziran 2022
+Düzenli egzersiz yapmak, sağlıklı bir diyet benimsemek ve stres yönetimi tekniklerini uygulamak gibi yaşam tarzı değişiklikleri, uyku kalitesini artırabilir ve uyku bozukluklarının riskini azaltabilir. 
+
+Bu nedenle, bireylerin uyku düzenleri ve yaşam tarzı seçimleri üzerinde bilinçli olmaları ve gerekli önlemleri almaları, genel sağlık ve iyi bir yaşam kalitesi için önemlidir.
+
+#Amaç ve Önem
+Bu veri seti, uyku düzenleri, fiziksel aktivite, stres düzeyi ve genel sağlık durumları arasındaki ilişkileri incelemek amacıyla kullanılabilir.
+
+Veri seti bizlere, bireylerin uyku düzenleri ve yaşam tarzı seçimlerinin sağlık üzerindeki etkilerini anlamak için zengin bir kaynak sunar. Bireylerin uyku kalitesi ve süresine etki eden faktörleri analiz ederek, daha sağlıklı yaşam tarzı önerileri ve uyku düzenlemeleri yapılabilir. Bu tür çalışmalar, uyku bozuklukları ile mücadele ve genel sağlık iyileştirme stratejileri geliştirmek için önemli veriler sağlayabilir.
+
+# Veri Seti
+Bu veri seti, uyku düzenleri, fiziksel aktivite, stres düzeyi ve genel sağlık durumları arasındaki ilişkileri incelemek amacıyla çevrimiçi olarak paylaşılan bir çalışmanın sonuçlarını içermektedir. Veri seti, uyku bozuklukları ve diğer sağlık parametreleri arasındaki ilişkileri incelemek amacıyla kullanılabilir.. Kısaca özetleyecek olursak;
+
 Toplam Gözlemler (Satırlar):
-1135 (Başlık satırı dahil)
+374 (Başlık satırı hariç)
 Değişkenler (Sütunlar):
 14
 Cinsiyet Dağılımı:
-Erkek: 1051
-Kadın: 79
-Belirtmek İstemiyorum: 4
-Veri Setinin Amacı ve Kullanımı:
-Bu veri seti, uyku düzenleri, fiziksel aktivite, stres düzeyi ve genel sağlık durumları arasındaki ilişkileri incelemek amacıyla kullanılabilir. Araştırmacılar ve sağlık profesyonelleri, bu verileri kullanarak aşağıdaki konularda çalışmalar yapabilirler:
+Erkek: 189
+Kadın: 185
 
-Farklı meslek gruplarının uyku kalitesi ve uyku süresi üzerindeki etkileri.
-Cinsiyet ve yaş gibi demografik faktörlerin uyku kalitesi ve uyku süresi ile ilişkisi.
-Fiziksel aktivite düzeyi ve stres seviyesinin uyku kalitesi üzerindeki etkileri.
-Uyku bozukluklarının (uykusuzluk ve uyku apnesi gibi) yaygınlığı ve bunların sağlık ölçütleri (örneğin, kalp atış hızı ve kan basıncı) ile ilişkisi.
-Potansiyel Analizler:
-Bu veri seti ile gerçekleştirilebilecek bazı potansiyel analizler şunlardır:
-
-Deskriptif İstatistikler: Farklı demografik grupların uyku ve yaşam tarzı özelliklerini tanımlamak.
-Regresyon Analizleri: Uyku kalitesi ve uyku süresi üzerinde etkili olan faktörleri belirlemek.
-Korelasyon Analizleri: Fiziksel aktivite, stres seviyesi ve uyku kalitesi arasındaki ilişkileri incelemek.
-Gruplar Arası Karşılaştırmalar: Uyku bozukluğu olan ve olmayan bireyler arasındaki sağlık ölçütlerini karşılaştırmak.
-Bu veri seti, bireylerin uyku düzenleri ve yaşam tarzı seçimlerinin sağlık üzerindeki etkilerini anlamak için zengin bir kaynak sunar. Bireylerin uyku kalitesi ve süresine etki eden faktörleri analiz ederek, daha sağlıklı yaşam tarzı önerileri ve uyku düzenlemeleri yapılabilir. Bu tür çalışmalar, uyku bozuklukları ile mücadele ve genel sağlık iyileştirme stratejileri geliştirmek için önemli veriler sağlayabilir.
-
-https://www.kaggle.com/datasets/sachinsrivastava/topgintakedataset
+https://www.kaggle.com/datasets/vincentchege/sleep-and-lifestyle/data
