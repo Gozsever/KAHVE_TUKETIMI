@@ -79,6 +79,8 @@ ggplot(sleep_disorder_by_gender, aes(x = Gender , fill = Sleep.Disorder)) +
 ```
 ![Cinsiyet](https://github.com/Gozsever/Uyku_Yasam_Tarz-/blob/main/G%C3%B6rseller/Cinsiyet.png)
 
+YORUM
+
 ## Grafik-2 Meslek Kategorisine Göre Uykusuzluk (Insomnia) Dağılımı
 
 ```
@@ -128,7 +130,8 @@ ggplot(insomnia_data, aes(x = Count, y = reorder(Occupation_Grouped, Count), fil
   xlim(0, 90)
 
 ```
+![Meslek ve Uykusuzluk](https://github.com/Gozsever/Uyku_Yasam_Tarz-/blob/main/G%C3%B6rseller/Meslek%20ve%20Uykusuzluk.png)
 
 
-
+YORUM
 
