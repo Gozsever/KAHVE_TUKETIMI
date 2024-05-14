@@ -135,3 +135,61 @@ ggplot(insomnia_data, aes(x = Count, y = reorder(Occupation_Grouped, Count), fil
 
 YORUM
 
+## Grafik-3 Yaşa Göre Stres Düzeyi Ve Uyku Kalitesi
+
+```
+
+# Yaş ortalamasını hesaplayalım
+age_mean <- mean(data$Age, na.rm = TRUE)
+
+# Stres düzeylerine göre renk ataması
+#blue_palette <- colorRampPalette(c("#C7E9C0", "#1F75FE"))(length(levels(data$Stress.Level)))
+
+blue_palette[1:6] <- c("#CAF0F8","#90E0EF","#00B4D8", "#0077B6","#023E8A","#03045E")  
+
+# Stres düzeylerine göre renk paletini kullanarak grafik oluşturma
+g1 <- ggplot(data, aes(x = as.factor(Stress.Level), y = Age, fill = as.factor(Stress.Level))) +
+  geom_violin(trim = FALSE) +
+  geom_boxplot(width = 0.2, fill = "white", color = "black") +
+  scale_fill_manual(values = blue_palette) +
+  
+  # Yaş ortalamasını gösteren düz çizgi ekleyelim   
+  geom_hline(yintercept = age_mean, linetype = "solid", color = "red", size = 0.5) +
+  
+  labs(
+    title = "Yaşa Göre Stres Düzeyi",
+    x = "Stres Düzeyi",
+    y = "Yaş",
+    fill = "Stres Düzeyi"
+  ) +
+  theme_minimal()
+print(g1)
+
+# Yaş ortalamasını hesaplayalım
+age_mean <- mean(data$Age, na.rm = TRUE)
+
+blue_palette[1:6] <- c("#CAF0F8","#90E0EF","#00B4D8", "#0077B6","#023E8A","#03045E")   
+
+# Uyku kalitesine göre renk paletini kullanarak grafik oluşturma
+g2 <- ggplot(data, aes(x = as.factor(Quality.of.Sleep), y = Age, fill = as.factor(Quality.of.Sleep))) +
+  geom_violin(trim = FALSE) +
+  geom_boxplot(width = 0.2, fill = "white", color = "black") +
+  scale_fill_manual(values = blue_palette) +
+  
+  # Yaş ortalamasını gösteren düz çizgi ekleyelim   
+  geom_hline(yintercept = age_mean, linetype = "solid", color = "red", size = 0.5) +
+  
+  labs(
+    title = "Yaşa Göre Uyku Kalitesi",
+    x = "Uyku Kalitesi",
+    y = "Yaş",
+    fill = "Uyku Kalitesi"
+  ) +
+  theme_minimal()
+ 
+ grid.arrange(g1,
+              g2)
+
+```
+
+
