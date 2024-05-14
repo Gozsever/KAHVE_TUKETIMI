@@ -114,7 +114,7 @@ blue_palette <- colorRampPalette(c("#C7E9C0", "#4A90E2"))(3)
 insomnia_data <- sorted_data %>%
   filter(Sleep.Disorder == "Insomnia")
 
-# Görselleştirme
+# Görseli çizdirelim
 ggplot(insomnia_data, aes(x = Count, y = reorder(Occupation_Grouped, Count), fill = as.factor(Sleep.Disorder))) +
   geom_bar(stat = "identity", position = "dodge") +
   scale_fill_manual(values = blue_palette,
