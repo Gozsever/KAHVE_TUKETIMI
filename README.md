@@ -77,6 +77,58 @@ ggplot(sleep_disorder_by_gender, aes(x = Gender , fill = Sleep.Disorder)) +
     ylim(0,150)
 
 ```
+![Cinsiyet](https://github.com/Gozsever/Uyku_Yasam_Tarz-/blob/main/G%C3%B6rseller/Cinsiyet.png)
+
+## Grafik-2 Meslek Kategorisine Göre Uykusuzluk (Insomnia) Dağılımı
+
+```
+
+# Meslek gruplaması yap
+data <- data %>%
+  mutate(Occupation_Grouped = case_when(
+    grepl("Software Engineer", Occupation) ~ "Yazılım Mühendisi",
+    grepl("Engineer", Occupation) ~ "Mühendis",
+    grepl("Lawyer", Occupation) ~ "Avukat",
+    grepl("Accountant", Occupation) ~ "Muhasebeci",
+    grepl("Doctor", Occupation) ~ "Doktor",
+    grepl("Salesperson", Occupation) ~ "Satış Personeli",
+    grepl("Teacher", Occupation) ~ "Öğretmen",
+    grepl("Nurse", Occupation) ~ "Hemşire",
+    TRUE ~ Occupation  # "Diğer" kategorisinde olmayan meslekleri direkt olarak kullan
+  )) %>%
+  na.omit() 
+
+# Meslek sıralaması
+sorted_data <- data %>%
+  group_by(Occupation_Grouped) %>%
+  mutate(Count = n()) %>%
+  arrange(Count, .by_group = TRUE)
+
+# Renk paleti
+blue_palette <- colorRampPalette(c("#C7E9C0", "#4A90E2"))(3)
+
+
+# "insomnia" olanları filtrele
+insomnia_data <- sorted_data %>%
+  filter(Sleep.Disorder == "Insomnia")
+
+# Görselleştirme
+ggplot(insomnia_data, aes(x = Count, y = reorder(Occupation_Grouped, Count), fill = as.factor(Sleep.Disorder))) +
+  geom_bar(stat = "identity", position = "dodge") +
+  scale_fill_manual(values = blue_palette,
+  labels = c("Uykusuzluk"))+
+  labs(
+    title = "Meslek Kategorisine Göre Uykusuzluk (Insomnia) Dağılımı",
+    y = "Meslek",
+    x = "Gözlem Sayısı",
+    fill = "Uyku Durumu"
+  ) +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 0, hjust = 1))+  # Meslek isimlerini çevirerek düzenleme
+  xlim(0, 90)
+
+```
+
 
 
 
