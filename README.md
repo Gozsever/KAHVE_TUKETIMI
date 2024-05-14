@@ -253,6 +253,11 @@ g6 <-   ggplot(filtered_data, aes(x = Physical.Activity.Level, fill = Sleep.Diso
 grid.arrange(g3, g4, g5, g6)
 
 ```
+![Uyku Bozukluğu](https://github.com/Gozsever/Uyku_Yasam_Tarz-/blob/main/G%C3%B6rseller/Uyku%20Bozuklu%C4%9Fu.png)
+
+YORUM
+
+# Sonuç 
   
 
 
