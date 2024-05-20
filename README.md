@@ -69,10 +69,10 @@ ggplot(sleep_disorder_by_gender, aes(x = Gender , fill = Sleep.Disorder)) +
   scale_x_discrete(labels = c("Kadın", "Erkek"))+
   theme_bw() +
   theme(
-    plot.title = element_text(size = 16, hjust = 0.5, face = "bold"),
-    axis.title = element_text(size = 14, face = "bold"),
+    plot.title = element_text(size = 16, hjust = 0.5),
+    axis.title = element_text(size = 14,),
     axis.text = element_text(size = 12),
-    legend.title = element_text(size = 14, face = "bold"),
+    legend.title = element_text(size = 14,),
     legend.text = element_text(size = 12))+
     ylim(0,150)
 
@@ -126,7 +126,7 @@ ggplot(insomnia_data, aes(x = Count, y = reorder(Occupation_Grouped, Count), fil
     fill = "Uyku Durumu"
   ) +
   theme_bw() +
-  theme(axis.text.x = element_text(angle = 0, hjust = 1))+  # Meslek isimlerini çevirerek düzenleme
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5))+  # Meslek isimlerini çevirerek düzenleme
   xlim(0, 90)
 
 ```
