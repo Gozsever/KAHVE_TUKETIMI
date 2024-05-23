@@ -79,11 +79,10 @@ ggplot(sleep_disorder_by_gender, aes(x = Gender , fill = Sleep.Disorder)) +
 ```
 ![Cinsiyet](https://github.com/Gozsever/Uyku_Yasam_Tarz-/blob/main/G%C3%B6rseller/Cinsiyet.png)
 
-  -Grafikte her iki cinsiyet için uyku bozuklukları kategorilerine göre kişi sayıları gösterilmektedir.
-  -Her iki cinsiyette de "Hiçbiri" kategorisinin diğer uyku bozukluklarına göre daha yüksek olduğu görülebilir. Bu çoğu kişinin uyku     
-   bozukluğu yaşamadığını göstermektedir. Erkeklerde uyku bozukluğu "Hiçbiri" kategorisine baktığımızda kadınlara göre daha fazla   
-   olduğunu görmekteyiz.
-  -Kadınlarda uyku apnesinin görülme oranı erkeklere göre daha yüksektir.
+  Görsel analize göre, grafikte her iki cinsiyet için uyku bozuklukları kategorilerine göre kişi sayıları gösterilmektedir. Her iki 
+  cinsiyette de "Hiçbiri" kategorisinin diğer uyku bozukluklarına göre daha yüksek olduğu görülebilir. Bu çoğu kişinin uyku     
+  bozukluğu yaşamadığını göstermektedir. Erkeklerde uyku bozukluğu "Hiçbiri" kategorisine baktığımızda kadınlara göre daha fazla   
+  olduğunu görmekteyiz. Kadınlarda uyku apnesinin görülme oranı erkeklere göre daha yüksektir.
 
 ## Grafik-2 Meslek Kategorisine Göre Uykusuzluk (Insomnia) Dağılımı
 
