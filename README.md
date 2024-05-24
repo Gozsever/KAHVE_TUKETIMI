@@ -135,9 +135,9 @@ ggplot(insomnia_data, aes(x = Count, y = reorder(Occupation_Grouped, Count), fil
 ![Meslek ve Uykusuzluk](https://github.com/Gozsever/Uyku_Yasam_Tarz-/blob/main/G%C3%B6rseller/Meslek%20ve%20Uykusuzluk.png)
 
   Görsele baktığımızda, farklı meslek gruplarındaki uykusuzluk vakaları sayısal olarak gösterilmektedir. Hemşire ve doktor meslek gruplarının diğerlerine göre daha yüksek uykusuzluğa 
-  sahip olduğu görülmektedir. Buna göre bu mesleklerin stresli veya yoğun çalışma     koşullarına sahip olduğunu söyleyebiliriz. Yazılım mühendisi grubunda uykusuzluk vakalarının daha 
-  az olduğu görülüyor, çalışma koşullarının veya yaşam tarzlarının uykusuzluk riskini azalttığını söyleyebiliriz.
-
+  sahip olduğu görülmektedir. Buna göre bu mesleklerin stresli veya yoğun çalışma koşullarına sahip olduğunu söyleyebiliriz. Ek olarak, yazılım mühendisliği gibi meslek gruplarında 
+  uykusuzluk vakalarının daha düşük olduğu gözlemlenmektedir. Yazılım mühendislerinin daha düzenli çalışma saatlerine ve daha az stresli bir iş ortamına sahip olduğunu düşünebiliriz.
+  
 ## Grafik-3 Yaşa Göre Stres Düzeyi Ve Uyku Kalitesi
 
 ```
