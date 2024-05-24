@@ -176,7 +176,7 @@ ggplot(data_long, aes(x = as.factor(Value), y = Age, fill = as.factor(Value))) +
 ```
 ![Yaşa Göre Stres Ve Uyku](https://github.com/Gozsever/Uyku_Yasam_Tarz-/blob/main/G%C3%B6rseller/Ya%C5%9Fa%20G%C3%B6re%20Stres%20ve%20Uyku.png)
 
-YORUM
+Görsel, stres düzeyi ve uyku kalitesine göre yaş dağılımlarını bizlere sunmaktadır. 
 
 ## Grafik-4 Uyku Bozukluklarının Uyku Kalitesine, Uyku Süresine, Stres Düzeyine Ve Fiziksel Aktiviteye Etkisi
 
