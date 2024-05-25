@@ -181,62 +181,37 @@ Uyku Kalitesi 4-5: Düşük uyku kalitesi seviyelerinde yaş dağılımı geniş
 Sonuç olarak, genç yaş gruplarında (40 yaşın altında), yüksek stres seviyeleri (7-8) daha yaygındır. Bu bireyler genellikle düşük veya orta uyku kalitesi seviyelerine sahiptirler. Daha yaşlı bireyler (40 yaşın üzerinde), düşük stres seviyelerine (3-4) ve yüksek uyku kalitesine (8-9) sahip olma eğilimindedirler. Bu bireylerin stres seviyeleri genellikle düşüktür ve uyku kaliteleri yüksektir.
 Özellikle, genç bireylerin daha yüksek stres seviyelerine sahip olduğu ve yaşlı bireylerin daha iyi uyku kalitesine sahip olduğu gözlemlenebilir.
 
-## Grafik-4 Uyku Bozukluklarının Uyku Kalitesine, Uyku Süresine, Stres Düzeyine Ve Fiziksel Aktiviteye Etkisi
+## Grafik-4 Uyku Bozukluklarının Uyku Kalitesine, Uyku Süresine Ve Stres Düzeyine Etkisi
 
 ```
- # Uykusuzluk ve Uyku Apnesi olan verileri filtrele
- filtered_data <- data %>% filter(Sleep.Disorder %in% c("Insomnia", "Sleep Apnea"))
- 
- g3 <- ggplot(filtered_data, aes(x = Quality.of.Sleep, fill = Sleep.Disorder )) +
-   geom_density(alpha = 0.5) +
-   labs(x = "Uyku Kalitesi ",
-        y = "Yoğunluk",
-        title = "Uyku Bozukluklarının Uyku Kalitesine Etkisi",
-        subtitle = "Kernel Yoğunluk Tahmini",
-        fill= "Uyku Bozukluğu")+
-   scale_fill_manual(values= met.brewer("Hokusai3",2),
-                     labels = c("Uykusuzluk", "Uyku Apnesi")) +
-   
-   theme_bw() 
- 
- 
-  g4 <-  ggplot(filtered_data, aes(x = Sleep.Duration, fill = Sleep.Disorder )) +
-   geom_density(alpha = 0.5) +
-   labs(x = "Uyku Süresi ",
-        y = "Yoğunluk",
-        title = "Uyku Bozukluklarının Uyku Süresine Etkisi",
-        subtitle = "Kernel Yoğunluk Tahmini",
-        fill= "Uyku Bozukluğu")+
-   scale_fill_manual(values= met.brewer("Hokusai3",2),
-                     labels = c("Uykusuzluk", "Uyku Apnesi")) +
-   
-   theme_bw() 
-   
- g5 <-  ggplot(filtered_data, aes(x = Stress.Level, fill = Sleep.Disorder )) +
-     geom_density(alpha = 0.5) +
-     labs(x = "Stres Düzeyi ",
-          y = "Yoğunluk",
-          title = "Uyku Bozukluklarının Stres Düzeyine Etkisi",
-          subtitle = "Kernel Yoğunluk Tahmini",
-          fill= "Uyku Bozukluğu")+
-     scale_fill_manual(values= met.brewer("Hokusai3",2),
-                       labels = c("Uykusuzluk", "Uyku Apnesi")) +
-     
-     theme_bw() 
-   
-g6 <-   ggplot(filtered_data, aes(x = Physical.Activity.Level, fill = Sleep.Disorder )) +
-     geom_density(alpha = 0.5) +
-     labs(x = "Fiziksel Aktivite Düzeyi ",
-          y = "Yoğunluk",
-          title = "Uyku Bozukluklarının Fiziksel Aktiviteye Etkisi",
-          subtitle = "Kernel Yoğunluk Tahmini",
-          fill= "Uyku Bozukluğu")+
-     scale_fill_manual(values= met.brewer("Hokusai3",2),
-                       labels = c("Uykusuzluk", "Uyku Apnesi")) +
-     
-     theme_bw() 
-   
-grid.arrange(g3, g4, g5, g6)
+# Filtrelenmiş veriyi oluştur(Uykusuzluk ve uyku apnesi)
+filtered_data <- data %>% filter(Sleep.Disorder %in% c("Insomnia", "Sleep Apnea"))
+
+# Renk paletini belirleyelim
+palette <- met.brewer("Hokusai3", 2)
+
+# Veri çerçevesini hazırlama 
+long_data <- filtered_data %>%
+  pivot_longer(cols = c(Quality.of.Sleep, Sleep.Duration, Stress.Level),
+               names_to = "Measure",
+               values_to = "Value")
+
+# Görseli oluşturalım 
+ggplot(long_data, aes(x = Value, fill = Sleep.Disorder)) +
+  geom_density(alpha = 0.5) +
+  labs(x = "Değer",
+       y = "Yoğunluk",
+       title = "Uyku Bozukluklarının Farklı Ölçütlere Etkisi",
+       subtitle = "Kernel Yoğunluk Tahmini",
+       fill = "Uyku Bozukluğu") +
+  scale_fill_manual(values = palette,
+                    labels = c("Uykusuzluk", "Uyku Apnesi")) +
+  facet_grid(rows = vars(Measure), scales = "free_x", labeller = as_labeller(c(
+    "Quality.of.Sleep" = "Uyku Kalitesi",
+    "Sleep.Duration" = "Uyku Süresi",
+    "Stress.Level" = "Stres Düzeyi"
+  ))) +
+  theme_bw()
 
 ```
 ![Uyku Bozukluğu](https://github.com/Gozsever/Uyku_Yasam_Tarz-/blob/main/G%C3%B6rseller/Uyku%20Bozuklu%C4%9Fu.png)
