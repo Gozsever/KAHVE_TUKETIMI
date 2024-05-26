@@ -217,7 +217,10 @@ ggplot(long_data, aes(x = Value, fill = Sleep.Disorder)) +
 ![Uyku Bozukluğu](https://github.com/Gozsever/Uyku_Yasam_Tarz-/blob/main/G%C3%B6rseller/Uyku%20Bozuklu%C4%9Fu.png)
 
 Grafikte iki farklı uyku bozukluğu için uyku kalitesi yoğunluk dağılımları gösteriliyor. Uykusuzluk çeken bireylerin uyku kalitesi 6 değerine doğru yaklaşırken ve sonrasında yoğunlaşırken, uyku apnesi olanların uyku kalitesi daha düşük yoğunlukta ve daha geniş bir aralığa yayılmış durumda. Bu, uykusuzluk yaşayanların belirli bir uyku kalitesi aralığında daha yoğunlaştığını, uyku apnesi olanların ise geniş bir dağılımla uyku kalitesi yoğunluğunun daha düşük seviyelerde olduğunu gösterir.
-Grafikte iki farklı uyku bozukluğu için stres düzeyi yoğunluk dağılımları gösteriliyor. Uykusuzluk çeken bireylerin stres seviyeleri genellikle daha yüksek yoğunlukta ve belirli bir aralıkta yoğunlaşmışken, uyku apnesi olanların stres seviyeleri daha düşük yoğunlukta ve daha geniş bir aralığa yayılmış durumda. Bu, uykusuzluk yaşayan bireylerin stres seviyelerinin genellikle daha yüksek olduğunu, uyku apnesi olanların ise daha değişken stres seviyelerine sahip olabildiklerini gösterir.
+Grafikte iki farklı uyku bozukluğu için uyku süresi yoğunluk dağılımları gösteriliyor. Uykusuzluk çeken bireylerin uyku süresi genellikle daha kısa sürelerde yoğunlaşırken, uyku apnesi olanların uyku süresi daha geniş bir aralığa yayılmış ve daha uzun sürelerde yoğunlaşmış durumda. Bu, uykusuzluk yaşayan bireylerin uyku sürelerinin daha kısayken, uyku apnesi olanların daha geniş ve uzun sürelerde uyuyabildiklerini gösterir.
+Grafikte iki farklı uyku bozukluğu için stres düzeyi yoğunluk dağılımları gösteriliyor. Uykusuzluk çeken bireylerin stres seviyeleri, uyku apnesi olan bireylere göre belirli bir aralıkta (özellikle 6-8 aralığında) yoğunlaşmış durumda. Uyku Apnesi olan bireylerin stres seviyeleri ise daha düşük yoğunlukta ve azda olsa belirli bir aralıkta (özellikle 4-6 aralığında) yoğunlaşmış durumda. Bu, uykusuzluk yaşayan bireylerin genellikle daha yüksek stres seviyelerine sahip olduğunu, uyku apnesi olanların ise daha düşük stres seviyelerinde yoğunlaştığını gösterir.
+Grafikler, uykusuzluk ve uyku apnesi gibi farklı uyku bozukluklarının, uyku kalitesi, uyku süresi ve stres düzeyi gibi önemli faktörler üzerinde farklı etkilere sahip olduğunu gösteriyor. 
+
 # Sonuç 
   
 
