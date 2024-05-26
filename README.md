@@ -222,6 +222,18 @@ Grafikte iki farklı uyku bozukluğu için stres düzeyi yoğunluk dağılımlar
 Grafikler, uykusuzluk ve uyku apnesi gibi farklı uyku bozukluklarının, uyku kalitesi, uyku süresi ve stres düzeyi gibi önemli faktörler üzerinde farklı etkilere sahip olduğunu gösteriyor. 
 
 # Sonuç 
+
+```
+Farklı yaş grupları, meslek grupları ve cinsiyetler arasında uyku bozukluklarının dağılımı ve etkisi farklılık göstermektedir. Genç yaş gruplarında yüksek stres seviyeleri daha yaygınken, yaşlı bireyler daha iyi uyku kalitesine sahip olma eğilimindedir. Meslek grupları arasında, stresli veya yoğun çalışma koşullarına sahip olan gruplarda daha yüksek uykusuzluk vakaları görülürken, daha düzenli çalışma saatlerine ve daha az stresli bir iş ortamına sahip olan gruplarda daha az uykusuzluk yaşanmaktadır. Cinsiyetler arasında, kadınlarda uyku apnesi görülme oranı erkeklere göre daha yüksektir. Grafikler, uykusuzluk ve uyku apnesi gibi farklı uyku bozukluklarının uyku kalitesi, uyku süresi ve stres düzeyi gibi önemli faktörler üzerinde farklı etkilere sahip olduğunu göstermektedir.
+
+```
+
+
+
+
+
+
+
   
 
 
