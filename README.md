@@ -216,8 +216,8 @@ ggplot(long_data, aes(x = Value, fill = Sleep.Disorder)) +
 ```
 ![Uyku Bozukluğu](https://github.com/Gozsever/Uyku_Yasam_Tarz-/blob/main/G%C3%B6rseller/Uyku%20Bozuklu%C4%9Fu.png)
 
-YORUM
-
+Grafikte iki farklı uyku bozukluğu için uyku kalitesi yoğunluk dağılımları gösteriliyor. Uykusuzluk çeken bireylerin uyku kalitesi 6 değerine doğru yaklaşırken ve sonrasında yoğunlaşırken, uyku apnesi olanların uyku kalitesi daha düşük yoğunlukta ve daha geniş bir aralığa yayılmış durumda. Bu, uykusuzluk yaşayanların belirli bir uyku kalitesi aralığında daha yoğunlaştığını, uyku apnesi olanların ise geniş bir dağılımla uyku kalitesi yoğunluğunun daha düşük seviyelerde olduğunu gösterir.
+Grafikte iki farklı uyku bozukluğu için stres düzeyi yoğunluk dağılımları gösteriliyor. Uykusuzluk çeken bireylerin stres seviyeleri genellikle daha yüksek yoğunlukta ve belirli bir aralıkta yoğunlaşmışken, uyku apnesi olanların stres seviyeleri daha düşük yoğunlukta ve daha geniş bir aralığa yayılmış durumda. Bu, uykusuzluk yaşayan bireylerin stres seviyelerinin genellikle daha yüksek olduğunu, uyku apnesi olanların ise daha değişken stres seviyelerine sahip olabildiklerini gösterir.
 # Sonuç 
   
 
