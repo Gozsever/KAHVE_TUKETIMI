@@ -23,7 +23,7 @@ Kadın: 185
 
 https://www.kaggle.com/datasets/vincentchege/sleep-and-lifestyle/data
 
-
+![POSTER](https://github.com/Gozsever/Uyku_Yasam_Tarz-/blob/main/POSTER/G%C3%BCl%C3%BCzar%20%C3%96ZSEVER%20gozsever%40anadolu.edu.tr%20(841%20x%20549%20piksel).pdf)
 
 # Grafikler
 
